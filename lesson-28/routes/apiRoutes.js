@@ -9,9 +9,9 @@ const router = require("express").Router(),
   coursesController = require("../controllers/coursesController"),
   usersController = require("../controllers/usersController"); // @TODO: Lesson 28.1
 
-// router.use(usersController.verifyToken); // @TODO: Lesson 28.1
 router.post("/login", usersController.apiAuthenticate); // @TODO: Lesson 28.3
-router.use(usersController.verifyToken); // @TODO: Lesson 28.3
+router.use(usersController.verifyToken); // @TODO: Lesson 28.1
+// router.use(usersController.verifyToken); // @TODO: Lesson 28.3
 
 router.get(
   "/courses",

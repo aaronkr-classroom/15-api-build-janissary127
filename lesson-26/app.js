@@ -100,13 +100,13 @@ const mongoose = require("mongoose"); // mongoose를 요청
 
 // 데이터베이스 연결 설정
 mongoose.connect(
-  "mongodb+srv://wjdgks815:kAaHXK4G52DSfDIn@ut-node.psdbufj.mongodb.net/?retryWrites=true&w=majority&appName=UT-Node/ut-node",
-  { useNewUrlParser: true }
+  "mongodb+srv://ut-node:cL5Jr31XyLBaMX9d@ut-node.msefbvf.mongodb.net/?retryWrites=true&w=majority&appName=UT-node",
+  { useNewUrlParser : true }
 );
-// 연결되면 메시지를 보냄
+
 const db = mongoose.connection;
 db.once("open", () => {
-  console.log("Connected to MongoDB using Mongoose!");
+  console.log("Connected to MONGODB!!!");
 });
 
 /**
@@ -154,9 +154,7 @@ app.use("/", router); // 라우터를 애플리케이션에 추가
 
 /** @TODO: Talk 라우트의 talkRoutes.js로의 이동 */
 
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
-
-/** @TODO: Research 라우트의 researchRoutes.js로의 이동 */
+/** @TODO: Error 라우트의 errorRoutes.js로의 이동 */
 
 /**
  * =====================================================================
